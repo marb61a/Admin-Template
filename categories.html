@@ -74,10 +74,13 @@
               <li class="active">Categories</li>
             </ol>
             <table class="table table-striped">
+              <thead>
               <tr>
                 <th><input type="checkbox"></th>
-                <th>Category Title</th>
+                <th>Category Title <i class="glyphicon glyphicon-chevron-down"></i></th>
               </tr>
+              <thead>
+              <tbody>
               <tr>
                 <td><input type="checkbox"></td>
                 <td><a href="category.html">Sample Category One</a></td>
@@ -89,7 +92,8 @@
               <tr>
                 <td><input type="checkbox"></td>
                 <td><a href="category.html">Sample Category Three</a></td>
-              </tr>            
+              </tr>   
+             </tbody>
             </table>
             <nav>
               <ul class="pagination">
@@ -115,5 +119,22 @@
       </div>
     </section>
     
+    <footer>
+      <p>Copyright 2015, All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+    $(function(){
+      $('#sort-table').tablesorter({
+        sortList:[[0,0], [1,0]]
+      });
+    });
+    </script>
   </body>
 </html>  
