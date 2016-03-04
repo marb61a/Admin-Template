@@ -82,7 +82,26 @@
                 <td>jackd@gmail.com</td>
                 <td>Registered</td>
               </tr>
-            </table>        
+            </table> 
+             <nav>
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -96,6 +115,14 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+    $(function(){
+      $('#sort-table').tablesorter({
+        sortList:[[0,0], [1,0]]
+      });
+    });
+    </script>
   </body>
 </html>  
