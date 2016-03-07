@@ -61,3 +61,11 @@ footer{
 	color:#fff;
 }
 
+.actions{
+	float:right;
+	margin-top:20px;
+}
+
+.tablesorter th{
+	cursor:pointer;
+}
